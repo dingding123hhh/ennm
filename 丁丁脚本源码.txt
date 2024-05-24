@@ -1203,43 +1203,6 @@ Tab:AddButton({
 })
 
 local Tab = Window:MakeTab({
-	Name = "河北唐县",
-	Icon = "rbxassetid://16060333448",
-	PremiumOnly = false
-})
-
-Tab:AddButton({
-  Name = "自动刷钱(成为货车司机才能自动刷钱）",
-  Callback = function ()
-      _G.autoFarm = AM
-    if AM then
-        autoFarm()
-    end
-    game.RunService.Stepped:Connect(function()
-        local virtualUser = game:GetService('VirtualUser')
-        virtualUser:CaptureController()
-        function teleportTo(CFrame) 
-            game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame
-        end
-        _G.autoFarm = true
-        function autoFarm()
-            while _G.autoFarm do
-                fireclickdetector(game:GetService("Workspace").DeliverySys.Misc["Package Pile"].ClickDetector)
-                task.wait(2.2)
-                for _,point in pairs(game:GetService("Workspace").DeliverySys.DeliveryPoints:GetChildren()) do
-                    if point.Locate.Locate.Enabled then
-                        teleportTo(point.CFrame)
-                    end
-                end
-                task.wait(0)
-            end
-        end
-    end)
-end})
-  end
- })
-
-local Tab = Window:MakeTab({
 	Name = "火箭发射模拟器",
 	Icon = "rbxassetid://16060333448",
 	PremiumOnly = false
