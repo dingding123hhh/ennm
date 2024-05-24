@@ -1182,13 +1182,6 @@ local Tab = Window:MakeTab({
 })
 
 Tab:AddButton({
-	Name = "餐厅大亨无限资金",
-	Callback = function()
-	loadstring(game:HttpGet("https://shz.al/~zkzkzisKAKAKK"))()
-	end
-})
-
-Tab:AddButton({
 	Name = "餐厅大亨1",
 	Callback = function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/toosiwhip/snake-hub/main/restaurant-tycoon-2.lua"))()
@@ -1355,7 +1348,6 @@ Tab:AddButton({
    end
  })
 
-
 Tab:AddButton({
   Name = "伐木大亨2最强",
   Callback = function ()
@@ -1365,7 +1357,8 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/frencaliber/LuaWareLo
  
  Tab:AddButton({
   Name = "伐木大亨2 1",
-  Callback = function ()loadstring(game:HttpGet("https://pastebin.com/raw/Q7seVBTV"))()
+  Callback = function ()
+  loadstring(game:HttpGet("https://pastebin.com/raw/Q7seVBTV"))()
   end
   })
   
@@ -1406,7 +1399,7 @@ Tab:AddButton({
 Tab:AddButton({
   Name = "汉化",
   Callback = function ()
-  loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\34\104\116\116\112\115\58\47\47\102\114\101\101\110\111\116\101\46\98\105\122\47\114\97\119\47\109\117\122\110\104\101\114\104\114\117\34\41\44\116\114\117\101\41\41\40\41\10")()
+ loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\34\104\116\116\112\115\58\47\47\102\114\101\101\110\111\116\101\46\98\105\122\47\114\97\119\47\109\117\122\110\104\101\114\104\114\117\34\41\44\116\114\117\101\41\41\40\41\10")()
   end
  })
  
@@ -1528,13 +1521,6 @@ Tab:AddButton({
 	Name = "战争大亨1",
 	Callback = function()
 	loadstring(game:HttpGet'https://raw.githubusercontent.com/Macintosh1983/ChillHubMain/main/ChillHubOilWarfareTycoon.lua')()
-	end
-})
-
-Tab:AddButton({
-	Name = "狼脚本",
-	Callback = function()
-	loadstring(game:HttpGet("https://shz.al/~WarTycoon"))()
 	end
 })
 
